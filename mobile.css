@@ -1,0 +1,40 @@
+@media (max-width: 576px){  
+    .main-container{ 
+    padding: 10%;
+    /* justify-content: center;        */
+
+    }
+   
+
+    .header-container {
+    display:block;
+    /* justify-content: center; */
+    }
+
+    h1 {
+    font-size: 1.3em;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-bottom: 15px;
+    } 
+    h6 {
+    border-bottom: 0.5px solid #9d97db;
+    }
+    
+    .switch-mode{
+        padding:0;
+        margin:0px;
+        padding-top:15px;        
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }    
+    
+    .medias-container {
+        /* justify-content: center; */
+    }
+    .activity{
+        width: 187px;
+    }
+    
+}

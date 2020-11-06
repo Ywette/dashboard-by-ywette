@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, zoom=100%">
+    <title>Dashboard Final by @iwetish :)</title>
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="style-top-container"></div>
+    <div class="main-container">    
+        <header class="header-container">       
+          <div class="name-container">
+            <h1 class="dashboard-container">Social Media Dashboard</h1>
+            <h6 class="total-container">Total followers: 23,004</h6>
+          </div>
+    
+          <div class="switch-mode container">
+            <span class="switch-text">Dark Mode</span>
+             <!-- Rounded switch  -->
+            <label class="switch">
+              <input type="checkbox" id="ty">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </header>
+
+        <div class="medias-container">  
+            <!-- 1-media-container     -->
+              <div class="media-container" id="fb-total" onclick="setShadows()" >        
+                <div class="first-row">
+                    <div class="container-for-fb-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <p class="nickname">@nathanf</p>
+                </div>
+                <div class="second-row">
+                  <p class="total-followers">1987</p>
+                  <p class="word-followers">followers</p>
+                </div>      
+                <div class="third-row">
+                  <i class="fas fa-caret-up"></i>
+                  <p class="activity-today up"> 12 Today</p>        
+                </div>
+              </div>   
+              <div class="media-container" id="twitter-total"> 
+                <div class="first-row">
+                  <i class="fab fa-twitter media-icon twitter"></i>
+                  <p class="nickname">@nathanf</p>
+                </div>
+                <div class="second-row">
+                  <p class="total-followers">1044</p>
+                  <p class="word-followers">followers</p>
+                </div>      
+                <div class="third-row">
+                  <i class="fas fa-caret-up"></i>
+                  <p class="activity-today up"> 99 Today</p>        
+                </div>
+              </div>          
+              <div class="media-container" id="insta-total">        
+                <div class="first-row">
+                  <div class="media-icon insta"></div>
+                  <p class="nickname">@realnathanf</p>
+                </div>
+                <div class="second-row">
+                  <p class="total-followers">11k</p>
+                  <p class="word-followers">followers</p>
+                </div>      
+                <div class="third-row">
+                  <i class="fas fa-caret-up"></i>
+                  <p class="activity-today up"> 1099 Today</p>        
+                </div>
+              </div>
+              <div class="media-container youtube-total" id="youtube-total">        
+                <div class="first-row">
+                  <div class="media-icon youtube"></div>
+                  <p class="nickname">Nethan F.</p>
+                </div>
+                <div class="second-row">
+                  <p class="total-followers">1987</p>
+                  <p class="word-followers">followers</p>
+                </div>      
+                <div class="third-row">
+                  <i class="fas fa-caret-down"></i>
+                  <p class="activity-today down"> 144 Today</p>        
+                </div>
+              </div>      
+          </div>
+
+
+          <div class="overwiev-container">
+            <h2 class="overview">Overview - Today</h2>
+          </div>
+<!-- activity block --> 
+          <div class="activities-container">           
+              <div class="activity facebook-page-views" id="fb-views" >    
+                <div class="left-side">
+                  <p class="action-type">Page Views</p>
+                  <p class="action-times">87</p>
+                </div>
+                <div class="right-side">
+                    <div class="container-for-fb-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                  <div class="activity-specific-up">
+                    <i class="fas fa-caret-up"></i>
+                    <p class="specific">3%</p>
+                  </div>          
+                </div>       
+              </div>      
+              <div class="activity facebook-likes" id="fb-likes" >    
+                <div class="left-side">
+                  <p class="action-type">Likes</p>
+                  <p class="action-times">52</p>
+                </div>
+                <div class="right-side">
+                    <div class="container-for-fb-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                  <div class="activity-specific-down">
+                    <i class="fas fa-caret-down"></i>
+                    <p class="specific">2%</p>
+                  </div>
+                </div>
+              </div>
+            <div class="activity insta-likes">
+              <div class="left-side">
+                <p class="action-type">Likes</p>
+                <p class="action-times">5462</p>
+              </div>
+              <div class="right-side">
+                <div class="media-icon insta"></div>
+                <div class="activity-specific-up">
+                  <i class="fas fa-caret-up"></i>
+                  <p class="specific">2257%</p>
+                </div>
+              </div>       
+            </div> 
+            <div class="activity insta-profile-likes">    
+              <div class="left-side">
+                <p class="action-type">Profile Views</p>
+                <p class="action-times">52k</p>
+              </div>
+              <div class="right-side">
+                <div class="media-icon insta"></div>
+                <div class="activity-specific-up">
+                  <i class="fas fa-caret-up"></i>
+                  <p class="specific">1375%</p>
+                </div>
+              </div>
+            </div> 
+            
+            <div class="activity twitter-retweets">    
+              <div class="left-side">
+                <p class="action-type">Retweets</p>
+                <p class="action-times">117</p>
+              </div>
+              <div class="right-side">
+                <i class="fab fa-twitter media-icon twitter"></i>
+                <div class="activity-specific-up">
+                  <i class="fas fa-caret-up"></i>
+                  <p class="specific">30%</p>
+                </div>          
+              </div>       
+            </div>      
+            <div class="activity twitter-likes">    
+              <div class="left-side">
+                <p class="action-type">Likes</p>
+                <p class="action-times">507</p>
+              </div>
+              <div class="right-side">
+                <i class="fab fa-twitter media-icon twitter"></i>
+                <div class="activity-specific-up">
+                  <i class="fas fa-caret-up"></i>
+                  <p class="specific">553%</p>
+                </div>
+              </div>       
+            </div> 
+            <div class="activity youtube-likes">    
+              <div class="left-side">
+                <p class="action-type">Likes</p>
+                <p class="action-times">107</p>
+              </div>
+              <div class="right-side">
+                <div class="media-icon youtube"></div>
+                <div class="activity-specific-down">
+                  <i class="fas fa-caret-down"></i>
+                  <p class="specific">19%</p>
+                </div>          
+              </div>       
+            </div>      
+            <div class="activity youtube-total-views">    
+              <div class="left-side">
+                <p class="action-type">Total Views</p>
+                <p class="action-times">1407</p>
+              </div>
+              <div class="right-side">
+                <div class="media-icon youtube"></div>
+                <div class="activity-specific-down">
+                  <i class="fas fa-caret-down"></i>
+                  <p class="specific">12%</p>
+                </div>
+              </div>       
+            </div> 
+          </div>
+
+
+
+    </div>
+</body>
+</html>
